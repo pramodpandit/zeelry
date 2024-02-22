@@ -18,7 +18,6 @@ class _newOffer2State extends State<newOffer2> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-
       appBar: AppBar(
         backgroundColor: appcolor.backGroundColor,
         title: longtext('New Order',17,Colors.white,17,38),

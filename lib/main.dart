@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/account_screens/profile_screen.dart';
+import 'package:untitled/dashboard_screen.dart';
+import 'package:untitled/topup_screens/select_method.dart';
 
 import 'Starting_Screen/splash.dart';
 
@@ -10,11 +13,9 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       debugShowCheckedModeBanner: false,
       title: 'Zeelry',
       theme: ThemeData(
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const demis(),
+      home: DashboardScreen(),
     );
   }
 }
