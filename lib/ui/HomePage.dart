@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:untitled/content/appcolor.dart';
 import 'package:untitled/content/image.dart';
 
@@ -14,6 +15,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _current = 0;
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -146,8 +148,28 @@ class _HomePageState extends State<HomePage> {
                     aspectRatio: 2.0,
                     viewportFraction: 1.0,
                     initialPage: 0,
+                    onPageChanged: (index, reason){
+                      setState(() {
+                        _current = index;
+                      });
+                    }
 
                 )),
+            Container(
+              color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: AnimatedSmoothIndicator(
+                  activeIndex: _current,
+                  count: 2,
+                  effect: JumpingDotEffect(
+                      dotWidth: 8,
+                      dotHeight: 8,
+                      activeDotColor:appcolor.greenColor,
+                      dotColor: Colors.black12
+                  ),),
+              ),
+            ),
 
           ],
         ),

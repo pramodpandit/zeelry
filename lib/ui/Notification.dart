@@ -78,10 +78,7 @@ class _notificationUserState extends State<notificationUser> {
           color: background,
           borderRadius: BorderRadius.all(Radius.circular(12)),border: Border.all(color: Colors.grey
         ),),
-        child: Padding(
-          padding: EdgeInsets.only(left: 10),
-          child:Image
-        ),
+        child: Image,
       ),
       subtitle: Text(subtitle,style: TextStyle(fontWeight: FontWeight.w500,color:Color(0xff8F92A1)),),
     );

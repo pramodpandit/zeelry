@@ -65,11 +65,11 @@ class _passbookState extends State<passbook> {
             SizedBox(height: 40,),
             longtext('Recent Expenses',14,Colors.black,38,34),
             SizedBox(height: 10,),
-            listNotification('Starbucks Coffee',Color(0xffFFAE58),Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM',1,'+₹156'),
+            listNotification('Starbucks Coffee',appcolor.backGroundColor,Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM',1,'+₹156'),
             listNotification('Use BLCK10 Promo Code',Colors.black,Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM',0,'-₹345'),
             listNotification('Starbucks Coffee',appcolor.backGroundColor,Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM',1,'+₹543'),
             listNotification('250 top up successfuly added',Colors.black,Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM',1,'+₹897'),
-            listNotification('Starbucks Coffee',Color(0xffFFAE58),Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM',0,'-₹900'),
+            listNotification('Starbucks Coffee',appcolor.backGroundColor,Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM',0,'-₹900'),
 
           ],
         ),
