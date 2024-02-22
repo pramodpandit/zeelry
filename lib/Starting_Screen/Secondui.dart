@@ -46,7 +46,7 @@ class _SeconduiState extends State<Secondui> {
                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Login_signup()));
               },
               child: Container(
-                height: 65,
+                height: 54,
                 width: size.width*0.8,
                 decoration: BoxDecoration(
                   color: appcolor.greenColor,

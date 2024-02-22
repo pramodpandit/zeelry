@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/content/appcolor.dart';
 import 'package:untitled/content/image.dart';
 
+import '../auth/Login_signup.dart';
 import '../widget/Text.dart';
 import 'Secondui.dart';
 
@@ -24,7 +25,9 @@ class _firstuiState extends State<firstui> {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [TextButton(onPressed: (){}, child: Text('Skip',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w400,fontSize: 16),))],),
+              children: [TextButton(onPressed: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Login_signup()));
+              }, child: Text('Skip',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w400,fontSize: 16),))],),
             Center(child: Image.asset(image.firstUiImage)),
           ],
         ),
@@ -53,7 +56,7 @@ class _firstuiState extends State<firstui> {
              Navigator.push(context, MaterialPageRoute(builder: (context)=>Secondui()));
               },
               child: Container(
-                height: 65,
+                height: 54,
                 width: size.width*0.8,
                 decoration: BoxDecoration(
                   color: appcolor.greenColor,

@@ -28,7 +28,7 @@ class _newOffer1State extends State<newOffer1> {
                 Navigator.pop(context);
               }, icon: Icon(Icons.arrow_back,color: Colors.white,)),
               longtext('New Order',17,Colors.white,17,38),
-              
+
             ],
           ),
           SizedBox(height: 30,),
@@ -57,7 +57,7 @@ class _newOffer1State extends State<newOffer1> {
                Navigator.push(context, MaterialPageRoute(builder: (context)=>newOffer2()));
             },
             child: Container(
-              height: 65,
+              height: 54,
               width: size.width*0.85,
               decoration: BoxDecoration(
                 color: appcolor.black,

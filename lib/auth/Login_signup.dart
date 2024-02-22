@@ -4,6 +4,8 @@ import 'package:untitled/content/image.dart';
 
 import '../widget/Text.dart';
 import 'Buy_now_Screen/newOffer1.dart';
+import 'Register.dart';
+import 'loginPage.dart';
 
 class Login_signup extends StatefulWidget {
   const Login_signup({super.key});
@@ -38,7 +40,7 @@ class _Login_signupState extends State<Login_signup> {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>newOffer1()));
               },
               child: Container(
-                height: 65,
+                height: 54,
                 width: size.width*0.85,
                 decoration: BoxDecoration(
                   color: appcolor.white,
@@ -52,10 +54,10 @@ class _Login_signupState extends State<Login_signup> {
             SizedBox(height: 40,),
             InkWell(
               onTap: (){
-               // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Login_signup()));
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>loginPage()));
               },
               child: Container(
-                height: 65,
+                height: 54,
                 width: size.width*0.85,
                 decoration: BoxDecoration(
                   color: appcolor.black,
@@ -69,7 +71,11 @@ class _Login_signupState extends State<Login_signup> {
             SizedBox(height: 10,),
             sorttext('Or',16,appcolor.white,38,34),
             SizedBox(height: 10,),
-            Text('Register',style: TextStyle(fontSize: 16,fontWeight: FontWeight.w700,decoration: TextDecoration.underline,color: appcolor.white,decorationColor: Colors.white),)
+            InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Register()));
+                },
+                child: Text('Register',style: TextStyle(fontSize: 16,fontWeight: FontWeight.w700,decoration: TextDecoration.underline,color: appcolor.white,decorationColor: Colors.white),))
 
           ],
         ),
