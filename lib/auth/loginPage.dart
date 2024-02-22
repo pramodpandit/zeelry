@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/content/appcolor.dart';
 import 'package:untitled/content/image.dart';
 
+import '../dashboard_screen.dart';
 import '../topup_screens/select_method.dart';
 import '../widget/Text.dart';
 import 'ForgotPassword/forgotPassword.dart';
@@ -62,7 +63,7 @@ class _loginPageState extends State<loginPage> {
           SizedBox(height: size.height*0.03,),
           InkWell(
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>SelectMethod()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>DashboardScreen()));
             },
             child: Container(
               height: 54,

@@ -7,4 +7,9 @@ class image{
   static String rectangleImage = 'assets/Rectangle.png';
   static String barCode = 'assets/barcode 1.png';
   static String startingImage = 'assets/Illustrationstarting.png';
+  static String notification1 = 'assets/today-outline 1.png';
+  static String icon1 = 'assets/Icon1.png';
+  static String icon3 = 'assets/icon3.png';
+  static String icon4 = 'assets/icon4.png';
+  static String rectangleIcon = 'assets/Rectangle 61.png';
 }

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:untitled/account_screens/profile_screen.dart';
 import 'package:untitled/scan_to_pay/scan_to_pay_screen.dart';
+import 'package:untitled/ui/HomePage.dart';
+import 'package:untitled/ui/Notification.dart';
+import 'package:untitled/widget/passbook.dart';
 
 class DashboardScreen extends StatelessWidget {
   DashboardScreen({super.key});
@@ -9,10 +12,10 @@ class DashboardScreen extends StatelessWidget {
   ValueNotifier<int> currentIndex = ValueNotifier(2);
 
   List pages = [
-    Text("home screen"),
-    Text("passbook screen"),
+    HomePage(),
+    passbook(),
     ScanToPay(),
-    Text("Notification screen"),
+    notificationUser(),
     ProfileScreen(),
   ];
 
@@ -34,10 +37,10 @@ class DashboardScreen extends StatelessWidget {
           },
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: "Home"),
-            NavigationDestination(icon: Icon(Icons.password), label: "Password"),
+            NavigationDestination(icon: Icon(Icons.password), label: "Passbook"),
             NavigationDestination(icon: Icon(Icons.qr_code), label: "Scan"),
             NavigationDestination(icon: Icon(Icons.notifications), label: "Notification"),
-            NavigationDestination(icon: FaIcon(FontAwesomeIcons.user), label: "Home")
+            NavigationDestination(icon: FaIcon(FontAwesomeIcons.user), label: "Profile")
           ],
         );
       },)

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/content/appcolor.dart';
+import 'package:untitled/content/image.dart';
 
 import '../widget/Text.dart';
 
@@ -41,7 +42,7 @@ class _notificationUserState extends State<notificationUser> {
         ),
       ),
       bottomNavigationBar: Container(
-        height: size.height *0.85,
+        height: size.height *0.75,
         decoration: BoxDecoration(
           color: appcolor.white,
           borderRadius: BorderRadius.vertical(top: Radius.circular(50))
@@ -53,7 +54,13 @@ class _notificationUserState extends State<notificationUser> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 40,),
-              sorttext('YESTERDAY',14,Color(0xff8F92A1),38,34)
+              sorttext('YESTERDAY',14,Color(0xff8F92A1),38,34),
+              SizedBox(height: 10,),
+              listNotification('Daily Cashback',Color(0xffFFAE58),Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM'),
+              listNotification('Use BLCK10 Promo Code',Color(0xffFFD2A6),Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM'),
+              listNotification('Cyber Monday Deal',appcolor.backGroundColor,Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM'),
+              listNotification('250 top up successfuly added',Color(0xffFFAE58),Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM'),
+              listNotification('Use NOV10 Promo Code',Color(0xffFFAE58),Image.asset(image.notification1,),'12 Feb 2024 -8:00 AM'),
             ],
           ),
         ),
@@ -61,9 +68,19 @@ class _notificationUserState extends State<notificationUser> {
 
     );
   }
-  Widget listNotification(String title){
+  Widget listNotification(String title,Color background,Widget Image,String subtitle){
     return ListTile(
-      title: Text(title,style: TextStyle(),),
+      title: Text(title,style: TextStyle(fontWeight: FontWeight.w500,color:appcolor.black),),
+      leading: Container(
+        height: 40,
+        width: 40,
+        decoration: BoxDecoration(
+          color: background,
+          borderRadius: BorderRadius.all(Radius.circular(12)),border: Border.all(color: Colors.grey
+        ),),
+        child: Image,
+      ),
+      subtitle: Text(subtitle,style: TextStyle(fontWeight: FontWeight.w500,color:Color(0xff8F92A1)),),
     );
   }
 }
