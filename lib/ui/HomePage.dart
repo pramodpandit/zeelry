@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                   Column(
                      mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                     Image.asset(image.icon3),
+                     Image.asset(image.icon6),
                       Text('Top Up',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 14,color: Colors.white),)
                     ],
                   ),
