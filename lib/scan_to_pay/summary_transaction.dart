@@ -58,7 +58,7 @@ class SummaryTransaction extends StatelessWidget {
               40.height,
               SizedBox(
                   // height: 400,
-                  child: Image.asset("assets/Icon3.png",fit: BoxFit.fitHeight,),
+                  child: Image.asset("assets/icon5.png",fit: BoxFit.fitHeight,),
               ),
               10.height,
               Text("Starbucks Coffee",style: GoogleFonts.dmSans(fontWeight: FontWeight.bold,fontSize: 25,color: Colors.white),),

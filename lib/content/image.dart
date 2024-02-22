@@ -11,5 +11,6 @@ class image{
   static String icon1 = 'assets/Icon1.png';
   static String icon3 = 'assets/icon3.png';
   static String icon4 = 'assets/icon4.png';
+  static String icon6 = 'assets/Icon6.png';
   static String rectangleIcon = 'assets/Rectangle 61.png';
 }
