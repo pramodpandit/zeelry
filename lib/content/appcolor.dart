@@ -4,11 +4,12 @@ class appcolor {
   static final Color buttonColor = Color(0xff0C63EE);
   static final Color greenColor = Color(0xff00C060);
   static final Color backGroundColor = Color(0xff105D38);
+  static final Color greyColor = Color(0xff8F92A1);
   static final Color white = Colors.white;
   static final Color purpleColor = Colors.black;
   static final Color pinkColors = Color(0xffFFC6E7);
   static final Color black = Colors.black;
-  static final Color greyColor = Color(0xffEEEEEE);
+
   static final Color borderColor = Colors.black;
   static final Color SufixIconColor = Color(0xffDD2B1C);
   static final Color newRedColor = Color(0xffDD2B1C);

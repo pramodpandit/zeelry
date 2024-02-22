@@ -39,6 +39,7 @@ dependencies:
   google_fonts: any
   font_awesome_flutter: any
   nb_utils: any
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
