@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
+import 'package:untitled/account_screens/about_us.dart';
+import 'package:untitled/account_screens/personal.dart';
+import 'package:untitled/account_screens/privacy_policy.dart';
+import 'package:untitled/account_screens/refer_and_earn.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -74,20 +78,33 @@ class ProfileScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       ListTile(
+                        onTap : () {
+                          Personal().launch(context,pageRouteAnimation: PageRouteAnimation.SlideBottomTop);
+                        },
                         title: Text("Personal"),
                         leading: FaIcon(FontAwesomeIcons.userCheck),
                         trailing: Icon(Icons.arrow_forward_ios,size: 20,),
                       ),
                       ListTile(
+                        onTap : () {
+                          PrivacyPolicy().launch(context,pageRouteAnimation: PageRouteAnimation.SlideBottomTop);
+                        },
                         title: Text("Privacy & Policy"),
                         leading: Icon(Icons.policy),
                         trailing: Icon(Icons.arrow_forward_ios,size: 20,),
                       ),
                       ListTile(
+                        onTap : () {
+                          AboutUs().launch(context,pageRouteAnimation: PageRouteAnimation.SlideBottomTop);
+                        },
                         title: Text("About Us"),
                         leading: FaIcon(FontAwesomeIcons.circleQuestion),
                         trailing: Icon(Icons.arrow_forward_ios,size: 20,),
-                      ),ListTile(
+                      ),
+                      ListTile(
+                        onTap : () {
+                          ReferAndEarn().launch(context,pageRouteAnimation: PageRouteAnimation.SlideBottomTop);
+                        },
                         title: Text("Refer & Earn"),
                         leading: FaIcon(FontAwesomeIcons.question),
                         trailing: Icon(Icons.arrow_forward_ios,size: 20,),

@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:untitled/account_screens/profile_screen.dart';
+import 'package:untitled/scan_to_pay/scan_to_pay_screen.dart';
 
 class DashboardScreen extends StatelessWidget {
   DashboardScreen({super.key});
 
-  ValueNotifier<int> currentIndex = ValueNotifier(0);
+  ValueNotifier<int> currentIndex = ValueNotifier(2);
 
   List pages = [
     Text("home screen"),
     Text("passbook screen"),
-    Text("Scan Screen"),
+    ScanToPay(),
     Text("Notification screen"),
     ProfileScreen(),
   ];
