@@ -78,7 +78,7 @@ class _PaymentPasswordState extends State<PaymentPassword> {
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 child: Center(
-                  child: sorttext('Confim Ring Pin',20,appcolor.white,38,34),
+                  child: sorttext('Confim Ring Pin',16,appcolor.white,38,34),
                 ),
               ),
             ),

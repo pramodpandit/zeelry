@@ -114,7 +114,7 @@ class _RegisterState extends State<Register> {
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 child: Center(
-                  child: sorttext('Register & Place Order',20,appcolor.white,38,34),
+                  child: sorttext('Register & Place Order',16,appcolor.white,38,34),
                 ),
               ),
             ),

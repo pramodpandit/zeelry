@@ -42,7 +42,7 @@ class _StartedPageState extends State<StartedPage> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
               ),
               child: Center(
-                child: sorttext('Get Started',20,appcolor.white,38,34),
+                child: sorttext('Get Started',16,appcolor.white,38,34),
               ),
             ),
           ),

@@ -47,7 +47,7 @@ class _Login_signupState extends State<Login_signup> {
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 child: Center(
-                  child: sorttext('Buy Now',20,appcolor.backGroundColor,38,34),
+                  child: sorttext('Buy Now',16,appcolor.backGroundColor,38,34),
                 ),
               ),
             ),
@@ -64,7 +64,7 @@ class _Login_signupState extends State<Login_signup> {
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 child: Center(
-                  child: sorttext('Login',20,appcolor.white,38,34),
+                  child: sorttext('Login',16,appcolor.white,38,34),
                 ),
               ),
             ),

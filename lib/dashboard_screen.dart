@@ -10,7 +10,6 @@ class DashboardScreen extends StatelessWidget {
   DashboardScreen({super.key});
 
   ValueNotifier<int> currentIndex = ValueNotifier(2);
-
   List pages = [
     HomePage(),
     passbook(),
@@ -37,7 +36,7 @@ class DashboardScreen extends StatelessWidget {
           },
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: "Home"),
-            NavigationDestination(icon: Icon(Icons.password), label: "Passbook"),
+            NavigationDestination(icon: Icon(Icons.book), label: "Passbook"),
             NavigationDestination(icon: Icon(Icons.qr_code), label: "Scan"),
             NavigationDestination(icon: Icon(Icons.notifications), label: "Notification"),
             NavigationDestination(icon: FaIcon(FontAwesomeIcons.user), label: "Profile")

@@ -34,11 +34,11 @@ class _SeconduiState extends State<Secondui> {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 40,right: 40,top: 40,bottom: 15),
-              child: longtext('Pay Anything',28,Colors.black,38,38),
+              child: longtext('Pay Anything',20,Colors.black,38,38),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 18,right: 18),
-              child: sorttext('Supports many types of payments and pay without being complicated',18,Color(0xff8F92A1),26,26),
+              child: sorttext('Supports many types of payments and pay without being complicated',15,Color(0xff8F92A1),26,26),
             ),
             Spacer(),
             InkWell(
@@ -53,7 +53,7 @@ class _SeconduiState extends State<Secondui> {
                   borderRadius: BorderRadius.all(Radius.circular(30)),
                 ),
                 child: Center(
-                  child: longtext('Get Started',20,appcolor.white,38,34),
+                  child: longtext('Get Started',16,appcolor.white,38,34),
                 ),
               ),
             ),

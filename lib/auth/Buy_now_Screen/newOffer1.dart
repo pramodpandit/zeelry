@@ -64,7 +64,7 @@ class _newOffer1State extends State<newOffer1> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
               ),
               child: Center(
-                child: sorttext('Get Ring',20,appcolor.white,38,34),
+                child: sorttext('Get Ring',16,appcolor.white,38,34),
               ),
             ),
           ),

@@ -64,7 +64,7 @@ class _barCodePageState extends State<barCodePage> {
               borderRadius: BorderRadius.all(Radius.circular(20)),
             ),
             child: Center(
-              child: sorttext('Next',20,appcolor.white,38,34),
+              child: sorttext('Next',16,appcolor.white,38,34),
             ),
           ),
         ),

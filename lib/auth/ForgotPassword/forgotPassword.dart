@@ -69,7 +69,7 @@ class _forgotPasswrodState extends State<forgotPasswrod> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
               ),
               child: Center(
-                child: sorttext('Send',20,appcolor.white,38,34),
+                child: sorttext('Send',16,appcolor.white,38,34),
               ),
             ),
           ),

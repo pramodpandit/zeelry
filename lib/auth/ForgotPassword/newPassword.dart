@@ -87,7 +87,7 @@ class _newPasswordState extends State<newPassword> {
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 child: Center(
-                  child: sorttext('Reset Password',20,appcolor.white,38,34),
+                  child: sorttext('Reset Password',16,appcolor.white,38,34),
                 ),
               ),
             ),

@@ -44,11 +44,11 @@ class _firstuiState extends State<firstui> {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 40,right: 40,top: 40,bottom: 15),
-              child: longtext('Fastest Payment',28,Colors.black,38,38),
+              child: longtext('Fastest Payment',20,Colors.black,38,38),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 18,right: 18),
-              child: sorttext('QR code scanning technology makes your payment process more faster',18,Color(0xff8F92A1),26,26),
+              child: sorttext('QR code scanning technology makes your payment process more faster',15,Color(0xff8F92A1),26,26),
             ),
             Spacer(),
             InkWell(
@@ -63,7 +63,7 @@ class _firstuiState extends State<firstui> {
                   borderRadius: BorderRadius.all(Radius.circular(30)),
                 ),
                 child: Center(
-                    child: longtext('Next',20,appcolor.white,38,34),
+                    child: longtext('Next',16,appcolor.white,38,34),
                 ),
               ),
             ),

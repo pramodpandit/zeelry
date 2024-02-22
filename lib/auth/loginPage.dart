@@ -73,7 +73,7 @@ class _loginPageState extends State<loginPage> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
               ),
               child: Center(
-                child: sorttext('Login',20,appcolor.white,38,34),
+                child: sorttext('Login',16,appcolor.white,38,34),
               ),
             ),
           ),
