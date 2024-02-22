@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:untitled/content/appcolor.dart';
 import 'package:untitled/content/image.dart';
 
+import 'firstui.dart';
+
 class demis extends StatefulWidget {
   const demis({super.key});
   @override
@@ -22,7 +24,7 @@ class _demisState extends State<demis> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: CircularProgressIndicator(color:appcolor.redColor,),),
+      body: Center(child: CircularProgressIndicator(color:appcolor.buttonColor,),),
     );
   }
 }
@@ -39,7 +41,7 @@ class _splashScreenState extends State<splashScreen> {
     // TODO: implement initState
     super.initState();
     Future.delayed(Duration(seconds: 2),(){
-    //  Get.off(firstui());
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>firstui()));
     });
   }
   @override
